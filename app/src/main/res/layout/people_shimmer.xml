@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/peopleShimmerImageView1"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer1"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView1"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView1"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer1"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView1"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView1"/>
+
+    <View
+        android:id="@+id/peopleShimmerImageView2"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleShimmerImageView1" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer2"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView2"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView2"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer2"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView2"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView2"/>
+
+    <View
+        android:id="@+id/peopleShimmerImageView3"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleShimmerImageView2" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer3"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView3"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView3"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer3"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView3"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView3"/>
+
+
+    <View
+        android:id="@+id/peopleShimmerImageView4"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleShimmerImageView3" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer4"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView4"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView4"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer4"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView4"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView4"/>
+
+    <View
+        android:id="@+id/peopleShimmerImageView5"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleShimmerImageView4" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer5"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView5"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView5"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer5"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView5"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView5"/>
+
+    <View
+        android:id="@+id/peopleShimmerImageView6"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleShimmerImageView5" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer6"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView6"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView6"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer6"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView6"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView6"/>
+
+    <View
+        android:id="@+id/peopleShimmerImageView7"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleShimmerImageView6" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer7"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView7"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView7"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer7"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView7"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView7"/>
+
+    <View
+        android:id="@+id/peopleShimmerImageView8"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleShimmerImageView7" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer8"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView8"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView8"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer8"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView8"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView8"/>
+
+    <View
+        android:id="@+id/peopleShimmerImageView9"
+        style="@style/Shimmer.Avatar.PeopleAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleShimmerImageView8" />
+
+    <View
+        android:id="@+id/peopleUserNameShimmer9"
+        style="@style/Shimmer.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView9"
+        app:layout_constraintTop_toTopOf="@id/peopleShimmerImageView9"/>
+
+    <View
+        android:id="@+id/peopleEmailShimmer9"
+        style="@style/Shimmer.Title.Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/peopleShimmerImageView9"
+        app:layout_constraintBottom_toBottomOf="@id/peopleShimmerImageView9"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

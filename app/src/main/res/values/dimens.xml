@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="emoji_size">15sp</dimen>
+    <dimen name="emoji_padding_horizontal">12dp</dimen>
+    <dimen name="emoji_padding_vertical">7dp</dimen>
+    <dimen name="emoji_layout_height">30dp</dimen>
+    <dimen name="emoji_in_bottom_sheet_size">30dp</dimen>
+    <dimen name="stream_chat_recycler_padding">51dp</dimen>
+    <dimen name="topic_chat_recycler_padding">5dp</dimen>
+</resources>

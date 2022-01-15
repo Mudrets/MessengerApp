@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    android:paddingVertical="15dp"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addReactionButton"
+        style="@style/MessageActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_reaction_button_text"
+        android:drawableLeft="@drawable/ic_outline_add_reaction_24"
+        android:drawableTint="@color/aquamarine"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editMessageButton"
+        style="@style/MessageActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_message__button_text"
+        android:drawableLeft="@drawable/ic_edit_message"
+        android:drawableTint="@color/aquamarine"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/changeTopicMessageButton"
+        style="@style/MessageActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_topic_button_text"
+        android:drawableLeft="@drawable/ic_outline_reply_24"
+        android:drawableTint="@color/aquamarine"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/copyMessage"
+        style="@style/MessageActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copy_message_button_text"
+        android:drawableLeft="@drawable/ic_copy_message"
+        android:drawableTint="@color/aquamarine"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deleteMessageButton"
+        style="@style/MessageActionButton"
+        android:textColor="@color/warning_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_message_button_text"
+        android:drawableLeft="@drawable/ic_delete_message"
+        android:drawableTint="@color/warning_color"
+        />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp"
+    android:background="@color/aquamarine">
+
+    <TextView
+        android:id="@+id/topicName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tool:text="Testing"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:layout_marginStart="50dp"
+        />
+
+    <TextView
+        android:id="@+id/countMessagesInTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tool:text="1240 mes"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:layout_marginStart="25dp"
+        android:textStyle="italic"
+        />
+
+</LinearLayout>

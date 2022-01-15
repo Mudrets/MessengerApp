@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragment.chat.ChatFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/chatAppBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/aquamarine">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/chatToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="#general"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/chatShimmerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/chatTopicName"
+        app:layout_constraintBottom_toTopOf="@id/bottomMessagePanel"
+        android:background="@color/background_color"
+        android:visibility="gone">
+
+        <include layout="@layout/messages_shimmer"/>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <TextView
+        android:id="@+id/chatTopicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chatAppBar"
+        android:background="@color/topic_name_background"
+        tools:text="Topic: #testing"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/topic_in_chat_color"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomMessagePanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chatTopicName"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@color/background_color"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/emptyChatListImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_simon"
+        app:tint="@color/text_color"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/emptyChatListText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:textAlignment="center"
+        android:text="@string/empty_message_list_warning"
+        app:layout_constraintTop_toBottomOf="@id/emptyChatListImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/errorChatImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/chatErrorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_cloud_off_24"
+        app:tint="@color/text_color"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/chatErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:textAlignment="center"
+        android:text="@string/cant_load_messages_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/reloadChatButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_reload_48"
+        app:layout_constraintTop_toBottomOf="@id/chatErrorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/add_button_icon_color"
+        app:fabCustomSize="48dp"
+        app:maxImageSize="28dp"
+        app:backgroundTint="@color/aquamarine"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomMessagePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/message_edit_text_background"
+        android:paddingTop="5dp">
+
+
+        <FrameLayout
+            android:id="@+id/topicNameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/messageEditText"
+            android:paddingBottom="8dp"
+            android:paddingHorizontal="16dp"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/streamChatTopicName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="#testing"
+                android:background="@drawable/bg_message_edit_text"
+                android:textSize="18sp"
+                android:textColor="@color/topic_in_chat_color"
+                android:paddingVertical="8dp"
+                android:paddingStart="21dp"/>
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_message_edit_text"
+            android:hint="@string/message_edit_text_hint"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:layout_marginStart="16dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sendMessageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="5dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendMessageButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="@drawable/bg_circle"
+            app:cornerRadius="100dp"
+            app:layout_constraintBottom_toBottomOf="@id/messageEditText"
+            app:layout_constraintTop_toTopOf="@id/messageEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/messageEditText"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp"
+            app:icon="@drawable/ic_baseline_attach_file_24"
+            app:iconSize="22dp"
+            app:iconPadding="0dp"
+            app:iconGravity="textStart"
+            android:insetBottom="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetLeft="0dp"
+            app:iconTint="@color/send_icon_color"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

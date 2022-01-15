@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="20dp">
+
+    <TextView
+        android:id="@+id/errorDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Заголовок"
+        android:textSize="24sp"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/channels_separator_color"
+        android:layout_marginVertical="10dp"/>
+
+    <TextView
+        android:id="@+id/errorDialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"/>
+
+</LinearLayout>

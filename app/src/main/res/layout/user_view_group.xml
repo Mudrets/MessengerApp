@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Darrell Steward"/>
+
+    <TextView
+        android:id="@+id/userEmailTextView"
+        android:textColor="@color/user_email_color"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:text="darrel@company.com"/>
+
+    <View
+        android:id="@+id/userOnlineStatus"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/online_status"/>
+
+</merge>

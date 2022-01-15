@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.StreamsFragment">
+
+    <ImageView
+        android:id="@+id/emptyStreamListImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_simon"
+        app:tint="@color/text_color"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/emptyStreamListText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:textAlignment="center"
+        android:text="@string/empty_stream_list_message"
+        app:layout_constraintTop_toBottomOf="@id/emptyStreamListImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/errorStreamImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/streamErrorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_cloud_off_24"
+        app:tint="@color/text_color"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/streamErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:textAlignment="center"
+        android:text="@string/load_streams_error_message"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/reloadStreamsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_reload_48"
+        app:layout_constraintTop_toBottomOf="@id/streamErrorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/add_button_icon_color"
+        app:fabCustomSize="48dp"
+        app:maxImageSize="28dp"
+        app:backgroundTint="@color/aquamarine"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/streamsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

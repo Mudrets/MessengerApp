@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/channels"
+        android:enabled="true"
+        android:icon="@drawable/ic_channels_23"
+        android:title="@string/channels_title_navigation_bottom"/>
+
+    <item
+        android:id="@+id/people"
+        android:enabled="true"
+        android:icon="@drawable/ic_people_23"
+        android:title="@string/people_title_navigation_bottom"/>
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile_23"
+        android:title="@string/profile_title_navigation_bottom"/>
+</menu>

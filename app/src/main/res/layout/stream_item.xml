@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/streamName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/expandingImage"
+        tool:text="#general"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        android:paddingVertical="17dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/expandingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/streamName"
+        app:layout_constraintBottom_toBottomOf="@id/streamName"
+        android:paddingEnd="25dp"
+        android:paddingStart="25dp"
+        app:tint="@color/expand_arrow_color" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/streamTopics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/streamName"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

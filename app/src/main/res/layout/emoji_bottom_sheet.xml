@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="8dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/bg_emoji_bottom_sheet_dialog">
+
+    <View
+        android:layout_width="62dp"
+        android:layout_height="7dp"
+        android:background="@drawable/bg_circle"
+        android:backgroundTint="@color/emoji_bottom_dialog_rectangle"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.messengerapp.presentation.view_group.FlexBox
+            android:id="@+id/emojiFlexBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:margin_between_rows="15dp"
+            app:margin_between_elements="10dp"
+            />
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

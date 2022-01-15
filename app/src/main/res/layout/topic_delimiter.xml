@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingVertical="15dp">
+
+    <TextView
+        android:id="@+id/topicDelimiterName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/topic_name_background"
+        tool:text="Topic: #testing"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/topic_in_chat_color"
+        />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App colors -->
+    <color name="text_color">@color/white</color>
+    <color name="background_color">@color/black_800</color>
+    <color name="my_bg_message_start_color">@color/aquamarine</color>
+    <color name="my_bg_message_end_color">@color/dark_aquamarine</color>
+    <color name="message_bg_color">@color/black_500</color>
+    <color name="topic_name_background">@color/black_600</color>
+    <color name="selected_color">@color/gray_700</color>
+    <color name="unselected_color">@color/black_700</color>
+    <color name="date_bg_color">@color/black_900</color>
+    <color name="date_text_color">@color/gray_500</color>
+    <color name="message_edit_text_color">@color/gray_800</color>
+    <color name="hint_color">@color/gray_200</color>
+    <color name="send_icon_color">@color/black_800</color>
+    <color name="bg_emoji_bottom_dialog_sheet">@color/black_700</color>
+    <color name="emoji_bottom_dialog_rectangle">@color/gray_600</color>
+    <color name="topic_in_chat_color">@color/gray_200</color>
+    <color name="bottom_navigation_view_item">@color/gray_500</color>
+    <color name="checked_bottom_navigation_view_item">@color/white</color>
+    <color name="bottom_nav_color">@color/black_700</color>
+    <color name="search_channels_app_bar">@color/black_700</color>
+    <color name="expand_arrow_color">@color/gray_700</color>
+    <color name="channels_separator_color">@color/gray_800</color>
+    <color name="user_email_color">@color/gray_600</color>
+    <color name="button_background_color">@color/gray_700</color>
+    <color name="button_text_color">@color/gray_300</color>
+    <color name="offline_status_color">@color/gray_300</color>
+    <color name="shimmer_color">@color/gray_600</color>
+    <color name="bg_dialog_color">@color/black_700</color>
+    <color name="error_text_on_bg_color">@color/gray_600</color>
+    <color name="message_edit_text_background">@color/black_600</color>
+    <color name="edit_text_bg_color">@color/gray_700</color>
+    <color name="edit_text_border_color">@color/black_600</color>
+    <color name="warning_bg_edit_text_color">@color/dirty_pink</color>
+</resources>
